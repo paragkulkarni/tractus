@@ -1,0 +1,50 @@
+
+
+version: '1.0'
+
+services: 
+    postgresdb:
+      image: postgres:12
+      environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=tractus
+      tty: true
+      ports:
+        - "5432:5432"
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+        - ./db/tractus.sql:/docker-entrypoint-initdb.d/tractus.sql
+      networks:
+        postgres_network:
+          ipv4_address: 172.24.2.1
+    app:
+      build: .
+      ports:
+        - "4000:4000"
+      tty: true
+      depends_on:
+        - postgresdb
+      networks:
+        postgres_network:
+          ipv4_address: 172.24.2.2
+    frontend:
+      build: '../frontend/.'
+      ports:
+        - "3000:3000"
+      tty: true
+      depends_on:
+        - app
+      networks:
+        postgres_network:
+          ipv4_address: 172.24.2.3
+volumes:
+  postgres_data:
+   
+networks:
+    postgres_network:
+      driver: bridge
+      ipam:
+        driver: default
+        config:
+          - subnet: "172.24.2.0/16"

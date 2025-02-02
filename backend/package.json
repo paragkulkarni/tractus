@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run build && node ./build/server.js",
+    "start:dev": "nodemon --exec babel-node ./server.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./server.js -s",
+    "build": "npm run clean && npm run build-babel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.7",
+    "backend": "file:",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.26.0",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.26.7",
+    "@babel/runtime": "^7.26.7",
+    "@types/pg": "^8.11.11"
+  }
+}
