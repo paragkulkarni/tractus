@@ -1,5 +1,5 @@
-# Tractus Assignment
-## React19, NodeJS - 20 and SocketIO with dockerfile
+# Tractus Assignment - React19, NodeJS - 20 and SocketIO with dockerfile
+
 
 ## Frontend - React19 with React-bootstrap 
 ### To start project
@@ -8,11 +8,23 @@ Go to frontend folder :  cd frontend
 Then install package : npm install
 Then run project : npm start
 
+
+
 ## Backend - Node, socketIO with AWS RDS PostgreSQL(credentials already added)
 ### To start project
 Go to Terminal and go to same folder
 Go to backend folder :  cd backend
 Then install package : npm install
 Then run project : npm start
+
+
+
+
+### Following features is added
+Homepage
+!(https://github.com/paragkulkarni/tractus/blob/master/t1.png)
+
+
+
 
 
