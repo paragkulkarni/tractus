@@ -6,13 +6,13 @@
 Go to Terminal and go to same folder \
 Go to frontend folder :  cd frontend \
 Then install package : npm install \
-Then run project : npm start \
+Then run project : npm start \ 
 
 
 
 ## Backend - Node, socketIO with AWS RDS PostgreSQL(credentials already added)
 ### To start project
-Go to Terminal and go to same folder \ 
+Go to Terminal and go to same folder \
 Go to backend folder :  cd backend \
 Then install package : npm install \
 Then run project : npm start \
