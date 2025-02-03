@@ -22,7 +22,7 @@ Then run project : npm start
 
 ### Following features is added
 Homepage
-!(https://github.com/paragkulkarni/tractus/blob/master/t1.png)
+![](https://github.com/paragkulkarni/tractus/blob/master/t1.png)
 
 
 
