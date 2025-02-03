@@ -6,7 +6,7 @@
 Go to Terminal and go to same folder \
 Go to frontend folder :  cd frontend \
 Then install package : npm install \
-Then run project : npm start \ 
+Then run project : npm start 
 
 
 
@@ -15,7 +15,7 @@ Then run project : npm start \
 Go to Terminal and go to same folder \
 Go to backend folder :  cd backend \
 Then install package : npm install \
-Then run project : npm start \
+Then run project : npm start 
 
 ### To open project in browser - http://localhost:3000
 
