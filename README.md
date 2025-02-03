@@ -24,6 +24,25 @@ Then run project : npm start
 Homepage
 ![](https://github.com/paragkulkarni/tractus/blob/master/t1.png)
 
+Add Contract Page - Use of React Bootstrap Modal
+![](https://github.com/paragkulkarni/tractus/blob/master/t4.png)
+
+Edit or Update Contract 
+![](https://github.com/paragkulkarni/tractus/blob/master/t2.png)
+
+Pagination
+![](https://github.com/paragkulkarni/tractus/blob/master/t5.png)
+
+Search On Client and Id
+![](https://github.com/paragkulkarni/tractus/blob/master/t6.png)
+
+Filter on Status of Contract
+![](https://github.com/paragkulkarni/tractus/blob/master/t7.png)
+
+Finalize contract status by click on "Go to Contract" button and after update it shows Notification 
+![](https://github.com/paragkulkarni/tractus/blob/master/t3.png)
+
+
 
 
 
