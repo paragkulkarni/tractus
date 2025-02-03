@@ -1,7 +1,7 @@
 
 
 
-
+CREATE DATABASE tractus;
 -- Type: type_status
 
 -- DROP TYPE IF EXISTS public.type_status;

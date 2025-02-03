@@ -18,6 +18,17 @@ services:
       networks:
         postgres_network:
           ipv4_address: 172.24.2.1
+    nginx:
+      build: '../nginx/.'
+      restart: always
+      tty: true
+      ports: 
+        - "8080:8080"
+      links:
+        - app
+      networks:
+        postgres_network:
+          ipv4_address: 172.24.2.3
     app:
       build: .
       ports:
@@ -25,19 +36,23 @@ services:
       tty: true
       depends_on:
         - postgresdb
+      volumes:
+        - .:/app
       networks:
         postgres_network:
           ipv4_address: 172.24.2.2
+
     frontend:
       build: '../frontend/.'
       ports:
         - "3000:3000"
       tty: true
       depends_on:
+        - nginx
         - app
       networks:
         postgres_network:
-          ipv4_address: 172.24.2.3
+          ipv4_address: 172.24.2.4
 volumes:
   postgres_data:
    
